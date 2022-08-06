@@ -28,7 +28,6 @@ int CheckArray(string[] array, int lengthLimit)
     return result;
 }
 
-
 FillNewArray(StringsArray, StringsArray1, lengthLimit);
 Console.WriteLine($"{PrintArray(StringsArray1)}");
 
@@ -44,7 +43,6 @@ void FillNewArray(string[] oldArray, string[] newArray, int lengthLimit)
         }
     }
 }
-
 
 string PrintArray(string[] array)
 {
