@@ -13,3 +13,17 @@ int InputNumbers(string input)
     int output = Convert.ToInt32(Console.ReadLine());
     return output;
 }
+
+int lengthLimit = 3;
+int numbersItems = CheckArray(StringsArray, lengthLimit);
+string[] StringsArray1 = new string[numbersItems];
+
+int CheckArray(string[] array, int lengthLimit)
+{
+    int result = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= lengthLimit) result++;
+    }
+    return result;
+}
